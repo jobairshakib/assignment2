@@ -23,6 +23,7 @@ body{
 header{
     height: 100vh;
 }
+
 .btn{
     outline: 0;
     border: 0;
@@ -34,6 +35,7 @@ header{
     font-size: 16px;
     line-height: 24px;
     margin:16px 0;
+    cursor: pointer;
 }
 .btn span{
     padding-right: 8px;
@@ -124,8 +126,8 @@ brands bar start
     width: 1110px;
     justify-content: space-around;
     align-items: center;
-    border-top: 0.5px solid var(--primary-color);
-    border-bottom: 0.5px solid var(--primary-color)
+    border-top: 0.5px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 0.5px solid rgba(0, 0, 0, 0.1);
 }
 /*----------------------------------------------- 
 brands bar end
@@ -138,7 +140,7 @@ Popular Collection start
     position: relative;
     padding: 100px 0;
     width: 1047px;
-    height: 1662px;
+    /* height: 1662px; */
     margin: 0 auto;
 }
 .popular-collection{
@@ -146,6 +148,7 @@ Popular Collection start
     display: grid;
     grid-template-columns: repeat(3,1fr);
     gap: 30px;
+    margin-bottom: 50px;
 }
 .section-title{
     display: flex;
@@ -192,14 +195,16 @@ font-weight: 400;
 }
 .sec-btn{
     position: absolute;
+    outline: 0;
+    border: 0;
     right: 0;
-    padding-top: 50px;
+    background-color: transparent;
     width: 100px;
     height: 25px;
     color:#E02C6DDE;
     font-weight: 700;
     font-size: 16px;
-    border: none;
+    cursor: pointer;
 }
 .sec-btn span{
     padding-left: 8px;
@@ -207,3 +212,29 @@ font-weight: 400;
 /*----------------------------------------------- 
 Popular Collection end
 -------------------------------------------*/
+
+/* footer section */
+.footer{
+    display: flex;
+    height: 200px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background-color: #0A0826;
+    color: white;
+}
+.social-btn{
+    display: flex;
+    justify-content: center;
+}
+.social-btn a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 32px;
+    width: 32px;
+    margin: 8px;
+    padding: 16px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+}
