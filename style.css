@@ -40,9 +40,7 @@ header{
 .btn span{
     padding-right: 8px;
 }
-/*----------------------------------------------- 
-nav meanu start
--------------------------------------------*/
+/*----------------------------------------- nav meanu start------------------------------------*/
 nav{
     display: flex;
     justify-content: space-between;
@@ -77,12 +75,7 @@ nav{
     height: 36px;
     width: 36px;
 }
-/*----------------------------------------------- 
-nav meanu end
--------------------------------------------*/
-/*----------------------------------------------- 
-banner start
--------------------------------------------*/
+/*---------------------------------------- banner start---------------------------------------*/
 .banner{
     display: flex;
     justify-content: space-between;
@@ -131,12 +124,7 @@ banner start
     letter-spacing: 0px;
     text-align: left;
 }
-/*----------------------------------------------- 
-banner end
--------------------------------------------*/
-/*----------------------------------------------- 
-brands bar start
--------------------------------------------*/
+/*---------------------------------------- brands bar start-----------------------------------*/
 .brands{
     display: flex;
     height: 110px;
@@ -146,13 +134,8 @@ brands bar start
     border-top: 0.5px solid rgba(0, 0, 0, 0.1);
     border-bottom: 0.5px solid rgba(0, 0, 0, 0.1);
 }
-/*----------------------------------------------- 
-brands bar end
--------------------------------------------*/
 
-/*----------------------------------------------- 
-Popular Collection start
--------------------------------------------*/
+/*------------------------------------- Popular Collection start----------------------------*/
 #popular-collection{
     position: relative;
     padding: 100px 0;
@@ -226,11 +209,35 @@ font-weight: 400;
 .sec-btn span{
     padding-left: 8px;
 }
-/*----------------------------------------------- 
-Popular Collection end
--------------------------------------------*/
-
-/* footer section */
+/*----------------------------------- contact part------------------------------- */
+.contact{
+    width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 30px;
+    
+}
+.contact-left img{
+    width: 100%;
+}
+.contact-right form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+}
+.text-field{
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 18px;
+    font-family: inherit;
+    outline: 0;
+    border: 1px solid var(--primary-color);
+    border-radius: 30px;
+}
+/*----------------------------------------- footer section --------------------------------------*/
 .footer{
     display: flex;
     height: 200px;
