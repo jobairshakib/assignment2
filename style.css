@@ -262,3 +262,89 @@ font-weight: 400;
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 50%;
 }
+
+/*----------------------------- responsive css -----------------------------*/
+@media (max-width:480px) {
+    *{
+        overflow-x: hidden;
+    }
+    nav{
+        justify-content: center;
+    }
+    .logo h1{
+        font-weight: 700;
+        font-size: 16px;
+    }
+    .navigation{
+        display: none;
+    }
+    .banner{
+        flex-wrap: wrap;
+        
+    }
+    .banner-left{
+        order: 2;
+        text-align: center;
+        margin: 0 auto;
+    }
+    .banner-left h1{
+        font-size: 28px;
+        font-weight: 700;
+        padding: 0 20px;
+    }
+    .banner-left p{
+        font-size: 14px;
+        font-weight: 500;
+        padding: 0 40px;
+    }
+    .banner-right{
+        height: 257px;
+        width: 257px;
+        margin: 0 auto;
+    }
+    .banner-right img{
+        width: 100%;
+        margin: 0; 
+    }
+    .brands{
+        display: none;
+    }
+    #popular-collection{
+        width: fit-content;
+    }
+    .section-title{
+        justify-content: center;
+    }
+    .section-title h2{
+        font-size: 16px;
+        font-weight:600;
+    }
+    .popular-collection{
+        grid-template-columns: 1fr;
+    }
+    .sec-btn{
+        margin-right: 20px;
+    }
+    .contact{
+        grid-template-columns: 1fr;
+        width: fit-content;
+    }
+    .footer h2{
+        font-size: 16px;
+        font-weight: 700;
+    }
+    .footer p{
+        font-size: 12px;
+        font-weight: 700;
+    }
+    .social-btn a{
+        height: 24px;
+        width: 24px;
+        width: fit-content;
+        overflow-y: hidden;
+        border-radius: 10px;
+    }
+    
+
+    
+}
