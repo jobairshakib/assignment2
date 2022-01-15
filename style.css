@@ -241,6 +241,7 @@ font-weight: 400;
 .footer{
     display: flex;
     height: 200px;
+    width: 100vw;
     text-align: center;
     align-items: center;
     justify-content: center;
@@ -264,9 +265,13 @@ font-weight: 400;
 }
 
 /*----------------------------- responsive css -----------------------------*/
-@media (max-width:480px) {
+/* mobile device */
+@media (max-width:576px) {
     *{
         overflow-x: hidden;
+    }
+    header{
+        height: auto;
     }
     nav{
         justify-content: center;
@@ -280,7 +285,7 @@ font-weight: 400;
     }
     .banner{
         flex-wrap: wrap;
-        
+        padding-bottom: 0;
     }
     .banner-left{
         order: 2;
@@ -295,7 +300,7 @@ font-weight: 400;
     .banner-left p{
         font-size: 14px;
         font-weight: 500;
-        padding: 0 40px;
+        padding: 0 50px;
     }
     .banner-right{
         height: 257px;
@@ -306,11 +311,21 @@ font-weight: 400;
         width: 100%;
         margin: 0; 
     }
+    .brand{
+        display: flex;
+        justify-content: center;
+    }
     .brands{
-        display: none;
+        margin: 0 50px ;
+        width: fit-content;
+    }
+    .brand img{
+        width: 50%;
     }
     #popular-collection{
+        padding-top: 0;
         width: fit-content;
+        margin: 0 auto;
     }
     .section-title{
         justify-content: center;
@@ -329,13 +344,17 @@ font-weight: 400;
         grid-template-columns: 1fr;
         width: fit-content;
     }
+    form{
+        width: 80%;
+        margin: 0 auto;
+    }
     .footer h2{
         font-size: 16px;
         font-weight: 700;
     }
     .footer p{
         font-size: 12px;
-        font-weight: 700;
+        font-weight: 500;
     }
     .social-btn a{
         height: 24px;
@@ -344,7 +363,108 @@ font-weight: 400;
         overflow-y: hidden;
         border-radius: 10px;
     }
-    
-
-    
+}
+/* tablet device */
+@media (min-width:577px) and (max-width:768px){
+    *{
+        overflow-x: hidden;
+    }
+    header{
+        height: auto;
+    }
+    nav{
+        justify-content: center;
+    }
+    .logo h1{
+        font-weight: 700;
+        font-size: 24px;
+    }
+    .navigation{
+        /* display: none; */
+        padding-left: 20px;
+    }
+    .banner{
+        flex-wrap: wrap;
+        padding-bottom: 0;
+    }
+    .banner-left{
+        order: 2;
+        text-align: center;
+        margin: 0 auto;
+    }
+    .banner-left h1{
+        font-size: 30px;
+        font-weight: 700;
+        padding: 0 20px;
+    }
+    .banner-left p{
+        font-size: 20px;
+        font-weight: 500;
+        padding: 0 50px;
+    }
+    .banner-right{
+        height: 257px;
+        width: 257px;
+        margin: 0 auto;
+    }
+    .banner-right img{
+        width: 100%;
+        margin: 0; 
+    }
+    .brand{
+        display: flex;
+        justify-content: center;
+    }
+    .brands{
+        margin: 0 50px ;
+        width: fit-content;
+    }
+    .brand img{
+        width: 50%;
+    }
+    #popular-collection{
+        padding-top: 0;
+        width: fit-content;
+        margin: 0 auto;
+    }
+    .section-title{
+        justify-content: center;
+    }
+    .section-title h2{
+        font-size: 24px;
+        font-weight:600;
+    }
+    .card{
+        height: 476px;
+        width: 300px;
+    }
+    .popular-collection{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .sec-btn{
+        margin-right: 20px;
+    }
+    .contact{
+        grid-template-columns: 1fr;
+        width: fit-content;
+    }
+    form{
+        width: 80%;
+        margin: 0 auto;
+    }
+    .footer h2{
+        font-size: 24px;
+        font-weight: 700;
+    }
+    .footer p{
+        font-size: 16px;
+        font-weight: 500;
+    }
+    .social-btn a{
+        height: 24px;
+        width: 24px;
+        width: fit-content;
+        overflow-y: hidden;
+        border-radius: 10px;
+    }
 }
